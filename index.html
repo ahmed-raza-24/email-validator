@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email & Password Validator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: #1e1e1e;
+      padding: 30px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+    label {
+      font-size: 14px;
+      color: #bbb;
+      display: block;
+      margin-top: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #333;
+      border-radius: 8px;
+      background: #2a2a2a;
+      color: #fff;
+      font-size: 14px;
+    }
+    .btn {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      background: #ff5c5c;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #e14d4d;
+    }
+    .error {
+      font-size: 13px;
+      color: #ff5c5c;
+      margin-top: 5px;
+      display: none;
+    }
+    #resultMessage {
+      margin-top: 15px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #39d087;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Email & Password Validator</h1>
+    <form>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="you@example.com" />
+      <div id="emailError" class="error"></div>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="••••••••" />
+      <div id="passwordError" class="error"></div>
+
+      <button type="submit" class="btn">Validate</button>
+
+      <div id="resultMessage"></div>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
